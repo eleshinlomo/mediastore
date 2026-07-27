@@ -1,10 +1,20 @@
 
+
 const App = ()=>{
+
 
   return (
     <div className="text-center">
     <div className="font-bolder text-blue-500  text-4xl pt-4">
        WELCOME TO MEDIA STORE
+    </div>
+
+    <div>
+      {/* PLACE THE IMPORTED REMOTE COMPONENT HERE */}
+
+      {/* PLACE THE IMPORTED FORM COMPONENT HERE */}
+
+     
     </div>
 
     <div>
