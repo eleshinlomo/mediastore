@@ -14,3 +14,12 @@ git push origin develop
 
 # To pull from develop repository
 git pull origin develop
+
+# To Check Your Branch
+git branch 
+ 
+# To Change Your Branch 
+ git checkout
+
+# To Create a new branch 
+ git checkout -b <Name Of Your Branch>
