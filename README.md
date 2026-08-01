@@ -1,8 +1,9 @@
 
-This is a Vite project.
-
 # Overview
-This is a market hub that showcases drawings, games, and various media works. Some of the materials are available for free downloads while some are available for purchase.# mediastore
+This is a Vite-based training project that uses React for the frontend user interface and Python/FastAPI for the backend server. The project is a universal remote control system that connects to devices through their IP addresses, allowing users to control supported devices directly from a computer.
+
+Currently, the system supports control for major TV brands, including Amazon and Samsung devices. Future enhancements will expand functionality to support controlling mobile devices and additional device categories.
+
 
 # To start frontend
 cd frontend & npm run dev
