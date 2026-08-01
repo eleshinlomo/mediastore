@@ -12,7 +12,7 @@ export default function HubManagement() {
 
         <input
           type="text"
-          placeholder="Television IP Address (e.g. 10.0.0.92)"
+          placeholder="Television IP Address (e.g. 192.168.8.110)"
         />
 
         <button className="save-btn">
