@@ -1,14 +1,12 @@
-import TestComponent from "./components/TestComponent"
+import Remote from "./components/Remote"
+
 
 const App = ()=>{
 
   return (
     <div className="text-center">
-
-      {/* UPLOAD YOUR COMPONENTS HERE */}
+       <Remote />
       
-      {/* Remove this test component when you understand the message */}
-      <TestComponent />
 
     </div>
   )
