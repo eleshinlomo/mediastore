@@ -1,3 +1,4 @@
+import TestComponent from "./components/TestComponent"
 
 const App = ()=>{
 
@@ -6,6 +7,9 @@ const App = ()=>{
 
       {/* UPLOAD YOUR COMPONENTS HERE */}
       
+      {/* Remove this test component when you understand the message */}
+      <TestComponent />
+
     </div>
   )
 }
