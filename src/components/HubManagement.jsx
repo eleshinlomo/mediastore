@@ -1,4 +1,5 @@
 import "./HubManagement.css";
+import TestComponent from "./TestComponent";
 export default function HubManagement() {
   return (
     <div className="container">
