@@ -53,7 +53,7 @@ const Remote=()=> {
   };
 
   const handleYoutube = () => {
-    console.log("Launch YouTube");
+    console.log("Open YouTube");
   };
 
   return (
