@@ -6,11 +6,11 @@ Currently, the system supports control for major TV brands, including Amazon and
 
 
 # To start frontend
-cd frontend & npm run dev
+npm run dev
 
-# Version Control
+# To deploy your new code update to github
 git add .
-git commit -m "first commit"
+git commit -m <your commit message>
 git push origin develop
 
 # To pull from develop repository
