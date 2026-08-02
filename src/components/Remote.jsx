@@ -1,3 +1,4 @@
+import { sendButtonCommand } from '../api/Devices';
 import '../styles/Remote.css'
 import {
   FaArrowUp,
@@ -7,55 +8,16 @@ import {
   FaVolumeMute,
 } from "react-icons/fa";
 
-const Remote=()=> {
-  const handlePower = () => {
-    console.log("Power");
-  };
+const Remote=({activeDevice})=> {
 
-  const handleMute = () => {
-    console.log("Mute");
-  };
 
-  const handleUp = () => {
-    console.log("Up");
-  };
+  const handleButtonPress = async (command)=>{
+    console.log('COMMAND', command)
+    const payload = {command, ip: activeDevice.ip}
+      const response = await sendButtonCommand(payload)
+  }
 
-  const handleDown = () => {
-    console.log("Down");
-  };
-
-  const handleLeft = () => {
-    console.log("Left");
-  };
-
-  const handleRight = () => {
-    console.log("Right");
-  };
-
-  const handleOK = () => {
-    console.log("OK");
-  };
-
-  const handleBack = () => {
-    console.log("Back");
-  };
-
-  const handleHome = () => {
-    console.log("Home");
-  };
-
-  const handleVolDown = () => {
-    console.log("Volume Down");
-  };
-
-  const handleVolUp = () => {
-    console.log("Volume Up");
-  };
-
-  const handleYoutube = () => {
-    console.log("Open YouTube");
-  };
-
+ 
   return (
     <div className="remote">
 
@@ -63,14 +25,14 @@ const Remote=()=> {
 
         <button
           className="powerBtn"
-          onClick={handlePower}
+          onClick={()=>handleButtonPress('POWER')}
         >
           ⏻
         </button>
 
         <button
           className="muteBtn"
-          onClick={handleMute}
+          onClick={()=>handleButtonPress('MUTE')}
         >
           <FaVolumeMute />
         </button>
@@ -81,35 +43,35 @@ const Remote=()=> {
 
         <button
           className="arrow up"
-          onClick={handleUp}
+          onClick={()=>handleButtonPress('UP')}
         >
           <FaArrowUp />
         </button>
 
         <button
           className="arrow left"
-          onClick={handleLeft}
+          onClick={()=>handleButtonPress('LEFT')}
         >
           <FaArrowLeft />
         </button>
 
         <button
           className="ok"
-          onClick={handleOK}
+          onClick={()=>handleButtonPress('SELECT')}
         >
           OK
         </button>
 
         <button
           className="arrow right"
-          onClick={handleRight}
+          onClick={()=>handleButtonPress('RIGHT')}
         >
           <FaArrowRight />
         </button>
 
         <button
           className="arrow down"
-          onClick={handleDown}
+          onClick={()=>handleButtonPress('DOWN')}
         >
           <FaArrowDown />
         </button>
@@ -120,14 +82,14 @@ const Remote=()=> {
 
         <button
           className="smallBtn"
-          onClick={handleBack}
+          onClick={()=>handleButtonPress('BACK')}
         >
           Back
         </button>
 
         <button
           className="smallBtn"
-          onClick={handleHome}
+          onClick={()=>handleButtonPress('HOME')}
         >
           Home
         </button>
@@ -138,14 +100,14 @@ const Remote=()=> {
 
         <button
           className="smallBtn"
-          onClick={handleVolDown}
+          onClick={()=>handleButtonPress('VOL_DOWN')}
         >
           VOL -
         </button>
 
         <button
           className="smallBtn"
-          onClick={handleVolUp}
+          onClick={()=>handleButtonPress('VOL_UP')}
         >
           VOL +
         </button>
@@ -154,7 +116,7 @@ const Remote=()=> {
 
       <button
         className="youtubeBtn"
-        onClick={handleYoutube}
+        onClick={()=>handleButtonPress('YOUTUBE')}
       >
         📺 Launch YouTube
       </button>

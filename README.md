@@ -10,7 +10,7 @@ npm run dev
 
 # To deploy your new code update to github
 git add .
-git commit -m <your commit message>
+git commit -m "your commit message"
 git push origin develop
 
 # To pull from develop repository
